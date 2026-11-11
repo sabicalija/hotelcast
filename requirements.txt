@@ -1,0 +1,4 @@
+# HotelCast Optional Python Dependencies
+# Core functionality uses Python 3 standard library + system tools (ffmpeg, ffprobe, avahi-browse, pactl, xwininfo).
+zeroconf>=0.131.0
+yt-dlp>=2024.1.0
