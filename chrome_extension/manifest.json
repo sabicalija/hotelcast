@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "HotelCast — One-Click TV Streamer",
+  "version": "0.1.0",
+  "description": "Cast web videos or mirror your Chrome window + audio directly to AirPlay / HappyCast hotel TVs in one click.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "contextMenus",
+    "notifications"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*",
+    "http://localhost:8000/*"
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    },
+    "default_title": "HotelCast — Cast to Hotel TV"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  }
+}

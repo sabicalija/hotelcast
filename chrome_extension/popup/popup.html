@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HotelCast</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <span class="badge-dot" id="server-dot"></span>
+      <h1>HotelCast</h1>
+    </div>
+    <span class="status-pill" id="status-pill">Checking...</span>
+  </header>
+
+  <section class="tab-card">
+    <div class="tab-label">Active Chrome Tab</div>
+    <div class="tab-title" id="tab-title">Loading tab...</div>
+    <div class="tab-url" id="tab-url"></div>
+  </section>
+
+  <section class="actions">
+    <button type="button" class="btn btn-primary" id="btn-cast-url">
+      Cast Tab Video (yt-dlp + HLS)
+    </button>
+    <button type="button" class="btn btn-secondary" id="btn-cast-mirror">
+      Mirror Chrome Window + Audio
+    </button>
+    <button type="button" class="btn btn-danger" id="btn-stop">
+      Stop Streaming
+    </button>
+  </section>
+
+  <footer class="footer">
+    <div id="feedback-msg" class="feedback">Ready to stream to Hotel TV.</div>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
